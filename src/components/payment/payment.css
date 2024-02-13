@@ -1,0 +1,66 @@
+.subscription-main{
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+.select-subscription{
+    max-width: 1100px;
+    width:calc(100% - 164px);
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.each-subscription{
+    border: 1px solid black;
+    padding: 10px 50px;
+    border-radius: 20px;
+    background-color: rgba(174, 174, 223, 0.398);
+    transition: all 0.3s;
+    color:black;
+    font-size: 20px;
+    margin: 10px;
+    min-width: 200px;
+    cursor: pointer;
+}
+.each-subscription:hover{
+    background-color: rgb(56, 56, 118);
+    color: white;
+    box-shadow:0 2px 10px blue ;
+    border: none;
+}
+.buy_btn{
+    padding: 15px 30px;
+    background-color: blue;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.buy_btn:hover{
+    background-color: rgb(6, 6, 24);
+    color: white;
+}
+.hr-line{
+    background: linear-gradient( black, yellow, blue,yellow, black);
+    height: 5px;
+    border: none;
+    border-radius: 50%;
+}
+.subscription-heading{
+    padding-top: 30px;
+    font-size: 40px;
+}
+@media screen and (max-width: 740px) {
+    .subscription-conaiter{
+        display: block;
+    }
+    .select-subscription{
+        display: block;
+    }
+    .subscription-heading{
+        font-size: 30px;
+    }
+}

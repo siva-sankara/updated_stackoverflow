@@ -1,0 +1,138 @@
+.main-nav {
+    min-height: 50px;
+    width: 100%;
+    margin: 0% auto;
+    border-top: solid 3px rgb(227, 213, 226);
+    box-shadow: 0px 1px 5px rgba(205, 210, 215, 0.537);
+    position: fixed;
+    z-index: 15;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(13, 12, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hide-nav{
+    display: none;
+}
+
+.navbar {
+    height: 100%;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide-in-icon {
+    display: none;
+    transition: 0.2s;
+    padding: 5px 6px 3px 6px;
+    border-radius: 50%;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .navbar-1 {
+    display: flex;
+    align-items: center;
+    flex-grow: 0.5;
+    text-align: center;
+}
+
+.navbar .navbar-2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    color:aliceblue;
+    font-style: oblique;
+    padding: 5px 0px;
+    text-decoration: solid;
+}
+
+.nav-item {
+    margin: 0px 3px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    transition: 0.2s;
+    border: 1px solid #1c123a ;
+    color: white;
+}
+.nav-bars{
+    color: white;
+}
+.nav-btn {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 0px ;
+}
+
+.nav-item:hover,
+.slide-in-icon:hover{
+    background-color: rgb(226, 226, 226);
+    color: black;
+    border: 1px solid black;
+}
+
+.navbar .navbar-1 form  {
+    flex-grow: 0.5;
+    padding: 0px 12px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.navbar .navbar-1 form input {
+    min-width: 92%;
+    margin: 0;
+    padding: 8px 10px 8px 40px;
+    font-size: 13px;
+    border: solid 1px #0000003e;
+    border-radius: 20px;
+}
+
+.navbar .navbar-1 form .search-icon {
+    position: absolute;
+    left: 25px;
+    top: 8px;
+}
+
+.nav-links {
+    padding: 7px 13px;
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color:  rgb(43, 11, 132);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-links:hover {
+    background-color:rgb(226, 226, 226) ;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1);
+}
+@media screen and (max-width: 1120px) {
+    .navbar .navbar-1 form {
+      display: none;
+    }
+  }
+  
+@media screen and (max-width: 760px) {
+    .slide-in-icon {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .navbar .navbar-1 .res-nav {
+      display: none;
+    }
+  }
+  
